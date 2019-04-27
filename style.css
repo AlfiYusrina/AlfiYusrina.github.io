@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700');
+.rotateimage {
+animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+.container {
+  padding: 10px;
+  width: calc(100% - 20px);
+  max-width: 960px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+.hidden {visibility: hidden;}
+.intro {
+  align-items: center;
+  justify-content: center;
+}
+.profile-photo {
+  padding:10px;
+  width: 15em;
+}
+section {
+  margin-top: 15px;
+}
+h1 {
+  font-family: Pacifico;
+}
+.myname{
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+span, p, li {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+h2 {
+  font-size: 1.4em;
+}
+span, p, li, a, address {
+  font-size: 1.2em;
+}
+strong {
+  font-weight: bold;
+}
+.quote {
+margin-top: 15px;
+}
+.quote p {
+  line-height: 1.4em;
+  font-size: 1.4em;
+  text-align: justify;
+  hyphens: auto;
+}
+.quote-greeting {
+ font-size: 2.3em;
+  color: #F7BED8;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+animation:
+  typing 2.2s steps(50, end),
+  blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+.intro,
+.softwares,
+.info-edu,
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills {
+  justify-content: space-between;
+}
+.info-edu section{
+  width: 50%;
+}
+.personal-info {
+  background-repeat: no-repeat;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.personal-info img {
+  margin-right: 10px;
+  width: 2em;
+}
+a:hover,
+.personal-info:hover,
+.strategy a:hover{
+  color: #B97FD5;
+}
+.title{
+  font-size: 2.1em;
+  padding: 10px 0;
+  display: inline-block;
+}
+.title::before {
+  content: " ";
+height: 0.3em;
+background-color: #F7BED8;
+border-radius: 0.75em;
+position: relative;
+top: 36px;
+z-index: -1;
+display: block;
+}
+.edu-lists{
+padding-top: 10px;
+}
+.school {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3.3em;
+  padding-bottom: 15px;
+}
+.school h2 {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+.devine {
+  background: url(assets/edu-devine.png) no-repeat;
+  background-size: 3em;
+}
+.iksi {
+  background: url(assets/edu-iksi.png) no-repeat;
+  background-size: 3em;
+}
+.softwares {
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.profile-container,
+.software,
+.hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.software img {
+  margin-bottom: 15px;
+}
+
+.hobby {
+  justify-content: flex-end;
+}
+.hobby span {
+  padding-top: 10px;
+}
+.competence-container {
+  padding-top: 10px;
+}
+.hobby-container,
+.competence-container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.competence-container li {
+  text-align: center;
+}
+.software img,
+.competence-container img,
+.hobby img {
+width: 5.6em;
+}
+.soft-skills,
+.competences-experiences {
+  width: 48%;
+}
+.interest {
+  background: url(assets/heart.png) no-repeat;
+  background-size: 1.9em;
+  padding: 0.5em 0.5em 0.5em 2.2em;
+}
+.bar {
+  border: #B97FD5 2px solid;
+  border-radius: 31px;
+  width: 95%;
+  height: 20px;
+  margin: 5px 0;
+}
+.bar-inside{
+  background-color: #F7BED8;
+  height: 20px;
+  display: block;
+  border-radius: 22px;
+  z-index: -1;
+  position: relative;
+}
+.language {
+  margin: 20px 0;
+}
+.profile-container-text,
+.personal-info,
+.quote p,
+.language h2,
+.experience h2,
+.strategy h2{
+  font-family: Bitter;
+}
+.language span {
+  font-size: 1em;
+}
+.dutch{
+  width: 85%;
+}
+.indonesian {
+  width: 100%;
+}
+.english {
+  width: 95%;
+}
+.french {
+  width: 20%;
+}
+.experience h2,
+.strategy h2{
+  background: url(assets/star.png) no-repeat;
+  background-size: 25px;
+  background-position-y: center;
+  padding: 10px 0px 10px 30px;
+}
+.experience ul li::before,
+.hyf ul li::before {
+  content: "\290F";
+  color: #F7BED8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.experience ul {
+  margin-bottom: 10px;
+}
+.experience li {
+  font-size: 1.2em;
+}
+.strategies p,
+.hyf p {
+  font-size: 1.3em;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+}
+.strategy a {
+  color:#F7BED8;
+}
+.strategy p,
+.hyf a {
+  font-size: 1.2em;
+  padding-left: 18px;
+  font-weight: lighter;
+}
+@media (max-width: 414px){
+  .title::before{
+    background-color: white;
+  }
+}
+@media (max-width: 826px){
+  .title::before{
+    background-color: white;
+  }
+}
+@media (max-width: 612px){
+  .info-edu section{
+    width: 100%;
+  }
+  span, p, li, a, address {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 660px){
+  .quote {
+    max-width: 60%;
+  }
+  .profile-container {
+    width: 40%;
+  }
+}
+@media (max-width: 660px) {
+  .soft-skills,
+  .competences-experiences{
+  width: 100%
+  }
+}
